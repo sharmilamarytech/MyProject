@@ -1,0 +1,4 @@
+
+Oct 15, 2019 15:17:48.45 NEW SESSION
+Oct 15, 2019 15:17:48.45 [1752:6208:1015/151748.083:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Oct 15, 2019 15:32:21.47 [1752:6208:1015/153221.469:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
