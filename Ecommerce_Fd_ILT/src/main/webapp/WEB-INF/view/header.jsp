@@ -23,10 +23,10 @@
           <li><a href="#">Page 1-3</a></li>
         </ul>
       </li>
-      <li><a href="#">ManageProduct</a></li>
-      <li><a href="#">ManageCategory</a></li>
-       <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
+      <li><a href="product">ManageProduct</a></li>
+      <li><a href="category">ManageCategory</a></li>
+       <li><a href="login">Login</a></li>
+        <li><a href="register">Register</a></li>
     </ul>
   </div>
 </nav>
