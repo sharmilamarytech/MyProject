@@ -14,7 +14,7 @@
 <jsp:include page="header.jsp"></jsp:include>
 
 <hr>
-<form class="form-horizontal" action="addProduct" method="post" enctype="multipart/form-data">
+<form class="form-horizontal" action="addProductAction" method="post">
 <fieldset>
 
 <!-- Form Name -->
@@ -40,7 +40,7 @@
 
 
 <!-- Select Basic -->
-<div class="form-group">
+<!--<div class="form-group">
   <label class="col-md-4 control-label" for="product_categorie">PRODUCT CATEGORY</label>
   <div class="col-md-4">
     <select id="product_categorie" name="cid" class="form-control">
@@ -52,7 +52,7 @@
                 
     </select>
   </div>
-</div>
+</div>-->
 
 <!-- Text input-->
 <div class="form-group">
@@ -64,13 +64,13 @@
 </div>
 
  <!-- File Button --> 
-<div class="form-group">
+<!--<div class="form-group">
   <label class="col-md-4 control-label" for="filebutton">Select Your Product Image</label>
   <div class="col-md-4">
     <input id="filebutton" name="file" class="input-file" type="file">
   </div>
 </div>
-
+-->
 <!-- Button -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton"></label>

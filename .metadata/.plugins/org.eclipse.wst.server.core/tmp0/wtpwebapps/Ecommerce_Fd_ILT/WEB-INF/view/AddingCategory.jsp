@@ -14,7 +14,7 @@
 <jsp:include page="header.jsp"></jsp:include>
  <!-- AddCategory -->
        
-       <form class="form-horizontal" action="category"  method="post">
+       <form class="form-horizontal" action="addCategoryAction"  method="post">
 <fieldset>
 
 <!-- Form Name -->
@@ -24,7 +24,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="product_id">CATEGORY ID</label>  
   <div class="col-md-4">
-  <input id="category_id"  name="c_id" placeholder="CATEGORY ID" class="form-control input-md" required="" type="text">
+  <input id="category_id"  name="cid" placeholder="CATEGORY ID" class="form-control input-md" required="" type="text">
     
   </div>
 </div>
@@ -33,7 +33,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="product_name">CATEGORY NAME</label>  
   <div class="col-md-4">
-  <input id="category_name" name="c_name" placeholder="CATEGORY NAME" class="form-control input-md" required="" type="text">
+  <input id="category_name" name="cname" placeholder="CATEGORY NAME" class="form-control input-md" required="" type="text">
     
   </div>
 </div>

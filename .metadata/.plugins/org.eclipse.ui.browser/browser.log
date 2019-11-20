@@ -2,3 +2,29 @@
 Oct 15, 2019 15:17:48.45 NEW SESSION
 Oct 15, 2019 15:17:48.45 [1752:6208:1015/151748.083:ERROR:socket_stream.cc(219)] Closing stream with result -2
 Oct 15, 2019 15:32:21.47 [1752:6208:1015/153221.469:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+
+Oct 23, 2019 14:45:34.80 NEW SESSION
+Oct 23, 2019 14:45:34.80 [11344:7548:1023/144534.794:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Oct 23, 2019 14:45:37.07 [11344:7548:1023/144537.076:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -21
+Oct 23, 2019 14:51:18.56 [11344:7548:1023/145118.560:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -21
+Oct 23, 2019 14:51:24.75 [11344:7548:1023/145124.757:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -21
+Oct 23, 2019 14:51:29.87 [11344:7548:1023/145129.878:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -105
+
+Oct 31, 2019 10:47:54.51 NEW SESSION
+Oct 31, 2019 10:47:54.51 [17008:12032:1031/104754.506:ERROR:checkin_request.cc(225)] Failed to get checkin response. Fetcher failed. Retrying.
+Oct 31, 2019 10:47:54.58 [17008:12032:1031/104754.507:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+Oct 31, 2019 10:48:17.72 [17008:20512:1031/104817.720:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+Oct 31, 2019 10:48:18.44 [17008:12032:1031/104818.441:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+Oct 31, 2019 10:48:21.93 [17008:12032:1031/104821.930:ERROR:checkin_request.cc(225)] Failed to get checkin response. Fetcher failed. Retrying.
+Oct 31, 2019 10:49:03.83 [17008:12032:1031/104903.830:ERROR:checkin_request.cc(225)] Failed to get checkin response. Fetcher failed. Retrying.
+Oct 31, 2019 10:49:17.43 [17008:12032:1031/104917.438:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+Oct 31, 2019 10:50:46.28 [17008:12032:1031/105046.280:ERROR:checkin_request.cc(225)] Failed to get checkin response. Fetcher failed. Retrying.
+Oct 31, 2019 10:50:47.38 [17008:12032:1031/105047.387:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+Oct 31, 2019 10:54:02.47 [17008:12032:1031/105402.473:ERROR:checkin_request.cc(225)] Failed to get checkin response. Fetcher failed. Retrying.
+Oct 31, 2019 10:54:25.98 [17008:12032:1031/105425.985:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+Oct 31, 2019 10:59:59.14 [17008:12032:1031/105959.142:ERROR:checkin_request.cc(225)] Failed to get checkin response. Fetcher failed. Retrying.
+Oct 31, 2019 11:00:28.89 [17008:20512:1031/110028.899:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+Oct 31, 2019 11:37:53.12 [17008:20512:1031/113753.122:ERROR:CONSOLE(200)] "Uncaught (in promise) TypeError: Cannot read property '0' of undefined", source: https://hp.hfindingformspro.com/scripts/home/forms_common?v=3UPbHLBGBQV7sIJyDmN0EpjFEnJmOOuSAebfbbI33mc1 (200)
+
+Nov 13, 2019 11:04:01.83 NEW SESSION
+Nov 13, 2019 11:04:01.83 [16584:14796:1113/110401.834:ERROR:CONSOLE(201)] "Uncaught (in promise) TypeError: Cannot read property '0' of undefined", source: https://hp.hfindingformspro.com/scripts/home/forms_common?v=fxojmewxIInmGLru7fJKKU1S62gdVqHmJqMWGXM9cAg1 (201)

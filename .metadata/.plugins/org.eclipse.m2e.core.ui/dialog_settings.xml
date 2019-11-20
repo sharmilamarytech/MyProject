@@ -57,7 +57,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.niit.exampleproject"/>
 			<item value="com.niit.sampleproject"/>
+			<item value="com.niit"/>
+			<item value="com.niit.Ecommerce_Bd_ILT"/>
+			<item value="com.niit.newpgpniithibernate"/>
+			<item value="com.niit.pgphibernate"/>
+			<item value="com.niit.newpgphibernate"/>
 			<item value="com.niit.Ecommerce_Fd_ILT"/>
 			<item value="com.niit.Check"/>
 			<item value="com.niit.BeanProgram"/>
@@ -66,7 +72,12 @@
 			<item value="com.niit"/>
 		</list>
 		<list key="artifactId">
+			<item value="exampleproject"/>
 			<item value="sampleproject"/>
+			<item value="Ecommerce_Bd_ILT"/>
+			<item value="newpgpniithibernate"/>
+			<item value="pgphibernate"/>
+			<item value="newpgphibernate"/>
 			<item value="Ecommerce_Fd_ILT"/>
 			<item value="Check"/>
 			<item value="BeanProgram"/>
