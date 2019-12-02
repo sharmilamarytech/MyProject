@@ -6,5 +6,7 @@ public interface ProductDAO
 { 
 	public void addproduct(ProductModel product);
 	
+	public ProductModel findById(int id);
+	
 
 }

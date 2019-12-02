@@ -36,4 +36,10 @@ public class ProductDAOImpl implements ProductDAO
 		
 	}
 
+	public ProductModel findById(int id)
+	{
+		
+		return (ProductModel)sessionFactory.openSession().get(ProductModel.class, id);
+		
+	}
 }

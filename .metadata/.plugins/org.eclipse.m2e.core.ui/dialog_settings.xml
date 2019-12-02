@@ -57,6 +57,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.niit.Exampleproject"/>
 			<item value="com.niit.exampleproject"/>
 			<item value="com.niit.sampleproject"/>
 			<item value="com.niit"/>
@@ -72,6 +73,7 @@
 			<item value="com.niit"/>
 		</list>
 		<list key="artifactId">
+			<item value="Exampleproject"/>
 			<item value="exampleproject"/>
 			<item value="sampleproject"/>
 			<item value="Ecommerce_Bd_ILT"/>

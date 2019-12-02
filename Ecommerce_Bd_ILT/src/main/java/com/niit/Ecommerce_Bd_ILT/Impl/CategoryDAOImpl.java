@@ -1,5 +1,8 @@
 package com.niit.Ecommerce_Bd_ILT.Impl;
 
+import java.util.List;
+
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,11 +34,29 @@ public class CategoryDAOImpl implements CategoryDAO
 	}
 	catch(Exception r)
 	{
-		System.out.println(r);
+		
 		return false;
 	}
 	
 		
 	}
 
+
+public List <CategoryModel>getAll()
+{
+	Session s=sessionFactory.openSession();
+	s.beginTransaction();
+    Query query=s.createQuery("from CategoryModel");
+    List<CategoryModel> list=query.list();
+   // System.out.println(list);
+    s.getTransaction().commit();
+	return list;
+	
+}
+public CategoryModel findById(int id)
+{
+	CategoryModel c=(CategoryModel)sessionFactory.openSession().get(CategoryModel.class,id);
+	return c;
+	
+}
 }
