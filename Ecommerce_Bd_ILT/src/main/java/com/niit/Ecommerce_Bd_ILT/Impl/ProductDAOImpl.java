@@ -1,5 +1,8 @@
 package com.niit.Ecommerce_Bd_ILT.Impl;
 
+import java.util.List;
+
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,5 +44,16 @@ public class ProductDAOImpl implements ProductDAO
 		
 		return (ProductModel)sessionFactory.openSession().get(ProductModel.class, id);
 		
+	}
+
+	public List<ProductModel> getAll() 
+	{
+		Session s=sessionFactory.openSession();
+		s.beginTransaction();
+		Query query=s.createQuery("from ProductModel");
+		List<ProductModel>list=query.list();
+		System.out.println(list);
+		s.getTransaction();
+		return list;
 	}
 }

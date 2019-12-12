@@ -1,6 +1,6 @@
 package com.niit.controller;
 
-import java.io.BufferedInputStream;
+
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.util.List;
@@ -85,7 +85,7 @@ public class CategoryController
 		p.setP_image(originalfile);
 		String filepath=request.getSession().getServletContext().getRealPath("/");
 		byte imagebyte[]=file.getBytes();
-		BufferedOutputStream fos=new BufferedOutputStream(new FileOutputStream(filepath+"/resourse/images/"+originalfile));
+		BufferedOutputStream fos=new BufferedOutputStream(new FileOutputStream(filepath+"/resources/images/"+originalfile));
 		 fos.write(imagebyte);
 		fos.close();
 		

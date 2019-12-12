@@ -28,3 +28,26 @@ Oct 31, 2019 11:37:53.12 [17008:20512:1031/113753.122:ERROR:CONSOLE(200)] "Uncau
 
 Nov 13, 2019 11:04:01.83 NEW SESSION
 Nov 13, 2019 11:04:01.83 [16584:14796:1113/110401.834:ERROR:CONSOLE(201)] "Uncaught (in promise) TypeError: Cannot read property '0' of undefined", source: https://hp.hfindingformspro.com/scripts/home/forms_common?v=fxojmewxIInmGLru7fJKKU1S62gdVqHmJqMWGXM9cAg1 (201)
+
+Dec 09, 2019 10:50:41.40 NEW SESSION
+Dec 09, 2019 10:50:41.40 [8416:7892:1209/105041.399:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -105
+Dec 09, 2019 10:50:41.43 [8416:7892:1209/105041.400:ERROR:checkin_request.cc(223)] Failed to get checkin response. Fetcher failed. Retrying.
+Dec 09, 2019 10:51:04.98 [8416:7892:1209/105104.981:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -105
+Dec 09, 2019 10:51:06.32 [8416:7892:1209/105106.324:ERROR:checkin_request.cc(223)] Failed to get checkin response. Fetcher failed. Retrying.
+Dec 09, 2019 10:51:23.76 [8416:18092:1209/105123.763:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-105).
+Dec 09, 2019 10:51:46.48 [8416:7892:1209/105146.487:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -105
+Dec 09, 2019 10:51:54.15 [8416:7892:1209/105154.155:ERROR:checkin_request.cc(223)] Failed to get checkin response. Fetcher failed. Retrying.
+Dec 09, 2019 10:53:17.12 [8416:7892:1209/105317.122:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -105
+Dec 09, 2019 10:53:30.58 [8416:7892:1209/105330.582:ERROR:checkin_request.cc(223)] Failed to get checkin response. Fetcher failed. Retrying.
+Dec 09, 2019 10:54:30.71 [8416:18092:1209/105430.717:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+Dec 09, 2019 10:54:55.66 [8416:18092:1209/105455.664:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+Dec 09, 2019 10:55:54.56 [8416:18092:1209/105554.565:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+Dec 09, 2019 10:56:18.43 [8416:7892:1209/105618.433:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -105
+Dec 09, 2019 10:56:59.61 [8416:7892:1209/105659.619:ERROR:checkin_request.cc(223)] Failed to get checkin response. Fetcher failed. Retrying.
+Dec 09, 2019 10:57:36.05 [8416:18092:1209/105736.054:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+Dec 09, 2019 11:01:18.41 [8416:18092:1209/110118.417:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+Dec 09, 2019 11:04:09.97 [8416:7892:1209/110409.978:ERROR:checkin_request.cc(223)] Failed to get checkin response. Fetcher failed. Retrying.
+Dec 09, 2019 11:04:12.74 [8416:7892:1209/110412.742:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -105
+
+Dec 11, 2019 13:21:22.34 NEW SESSION
+Dec 11, 2019 13:21:22.34 [2924:17300:1211/132122.340:ERROR:checkin_request.cc(223)] Failed to get checkin response. Fetcher failed. Retrying.

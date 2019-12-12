@@ -56,7 +56,7 @@ public class AppConfig
 	 
 	  builder.addAnnotatedClass(ProductModel.class);
 	  builder.addAnnotatedClass(CategoryModel.class);
-	  //builder.addAnnotatedClass()
+	  //builder.addAnnotatedClass(UserModel.class);
 	  return  builder.buildSessionFactory();
 	  
   }  
