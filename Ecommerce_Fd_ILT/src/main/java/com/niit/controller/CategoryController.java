@@ -56,7 +56,7 @@ public class CategoryController
 	}
 	
 	
-	@RequestMapping(value="addProductAction")
+	@RequestMapping(value="/addProductAction")
 	public ModelAndView addproductpage(@RequestParam("file") MultipartFile file,HttpServletRequest request)
 	{
 		try
@@ -81,6 +81,9 @@ public class CategoryController
 		
 		p.setProductprice(price);
 		
+		
+
+		//Important Code to store images
 		String originalfile=file.getOriginalFilename();
 		p.setP_image(originalfile);
 		String filepath=request.getSession().getServletContext().getRealPath("/");

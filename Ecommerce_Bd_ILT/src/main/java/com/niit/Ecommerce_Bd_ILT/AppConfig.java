@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.niit.Ecommerce_Bd_ILT.Model.CategoryModel;
 import com.niit.Ecommerce_Bd_ILT.Model.ProductModel;
+import com.niit.Ecommerce_Bd_ILT.Model.UserModel;
 
 
 
@@ -56,7 +57,7 @@ public class AppConfig
 	 
 	  builder.addAnnotatedClass(ProductModel.class);
 	  builder.addAnnotatedClass(CategoryModel.class);
-	  //builder.addAnnotatedClass(UserModel.class);
+	  builder.addAnnotatedClass(UserModel.class);
 	  return  builder.buildSessionFactory();
 	  
   }  

@@ -56,4 +56,12 @@ public class ProductDAOImpl implements ProductDAO
 		s.getTransaction();
 		return list;
 	}
-}
+	public List<ProductModel> getFilterProducts(int categoryid)
+	{
+		Session s=sessionFactory.openSession();
+		List<ProductModel> results=s.createQuery("from ProductModel where categoryid="+categoryid).list();
+		s.close();
+		return results;
+		
+	}
+	}

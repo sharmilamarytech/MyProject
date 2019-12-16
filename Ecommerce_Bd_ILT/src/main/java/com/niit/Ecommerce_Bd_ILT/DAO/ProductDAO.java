@@ -12,5 +12,6 @@ public interface ProductDAO
 	
 	public List<ProductModel>getAll();
 	
+	public List<ProductModel> getFilterProducts(int categoryid);
 
 }
