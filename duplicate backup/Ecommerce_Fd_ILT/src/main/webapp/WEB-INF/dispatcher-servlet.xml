@@ -1,0 +1,46 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	 xmlns:webflow-config="http://www.springframework.org/schema/webflow-config"
+xsi:schemaLocation="
+http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+http://www.springframework.org/schema/beans     
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/webflow-config
+http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.3.xsd">
+       
+       
+       <!-- To enable spring web mvc  -->
+       <mvc:annotation-driven></mvc:annotation-driven>
+       
+       <context:component-scan base-package="com.niit.controller"></context:component-scan>
+       <context:component-scan base-package="com.niit.Ecommerce_Bd_ILT"/>
+       
+       
+        <!--  to convert logical view name to actual view name -->
+       <!-- logical view name is 'home' -->
+       <!-- /WEB-INF/views/home.jsp -->
+       <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+       <property name="prefix" value="/WEB-INF/view/"></property>
+       <property name="suffix" value=".jsp"></property>
+       </bean>
+       
+       
+       <bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+		 <!-- setting maximum upload size  -->
+		 <!-- 300000-->
+		<property name="maxUploadSize" value="30000000" />
+		
+
+	</bean>
+       
+       <mvc:resources mapping="/resources/**" location="/resources/" />
+       </beans>
+
