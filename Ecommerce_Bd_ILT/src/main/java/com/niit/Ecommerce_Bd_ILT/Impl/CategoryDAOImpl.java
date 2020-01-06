@@ -44,11 +44,13 @@ public class CategoryDAOImpl implements CategoryDAO
 
 public List <CategoryModel>getAll()
 {
+	//@SuppressWarnings("unchecked")
+	
 	Session s=sessionFactory.openSession();
 	s.beginTransaction();
     Query query=s.createQuery("from CategoryModel");
     List<CategoryModel> list=query.list();
-   // System.out.println(list);
+    /*System.out.println(list.get(1));*/
     s.getTransaction().commit();
 	return list;
 	

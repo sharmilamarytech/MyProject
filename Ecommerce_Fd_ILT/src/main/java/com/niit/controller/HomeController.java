@@ -93,5 +93,12 @@ public class HomeController
 	   mv.addObject("list",clist);
 	   return mv;
    }
+   @RequestMapping("/userlogged")
+   public ModelAndView notacess()
+   {
+	   ModelAndView m9=new ModelAndView("noAccessPage");
+       return m9;
+	   
+   }
    
 }

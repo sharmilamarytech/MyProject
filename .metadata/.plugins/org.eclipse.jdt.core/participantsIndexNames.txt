@@ -17,3 +17,5 @@ E:\MyProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2888688390.in
 \Ecommerce_Fd_ILT\src\main\resources
 E:\MyProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\378003075.index
 \newpgphibernate\src\main\resources
+E:\MyProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2153192335.index
+\Ecommerce_Fd_ILT\src\main\java

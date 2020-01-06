@@ -62,7 +62,7 @@ public class AppConfig
 	  
   }  
 	  
-	
+//Create a transaction manager
 			@Bean
 			@Autowired 
 			public HibernateTransactionManager txManager(SessionFactory sessionFactory) 
