@@ -9,7 +9,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-
+import org.hibernate.mapping.Value;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -188,9 +188,22 @@ public class CategoryController
 	       	}
 
 	   	ModelAndView mv = new ModelAndView("Adding");
-	   	
+	   
 	   	return mv;
 	      
 	   }	
+	 
+	 @RequestMapping(value="/admin/product_delete")
+	 public ModelAndView deleteProduct(HttpServletRequest request)
+	 {
+		ProductModel p=product1.findById(Integer.valueOf(request.getParameter("id")));
+		System.out.print(p);
+		product1.delete(p);
+		List<ProductModel> list=product1.getAll();
+		ModelAndView mv=new ModelAndView("productlistview");
+		mv.addObject("slist",list);
+		return mv;
+		 
+	 }
 			
 	}

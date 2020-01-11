@@ -27,7 +27,7 @@
     </div>
 
     <div class="item">
-      <img src="./resources/images/img2.jpg" alt="Chicago">
+      <img src="./resources/images/img22.jpg" alt="Chicago">
     </div>
 
     <div class="item">

@@ -74,4 +74,13 @@ public class ProductDAOImpl implements ProductDAO
 		s.close();
 		
 	}
+	public void delete(ProductModel p)
+	{
+		Session s= sessionFactory.openSession();
+		s.beginTransaction();
+		s.delete(p);
+		s.getTransaction().commit();
+		s.close();
+		sessionFactory.openSession().delete(p);
+	}
 	}
