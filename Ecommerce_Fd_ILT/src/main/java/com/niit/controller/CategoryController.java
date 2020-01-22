@@ -9,17 +9,17 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.hibernate.mapping.Value;
+//import org.hibernate.mapping.Value;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
-
+import org.springframework.web.bind.annotation.RequestMethod;
 import com.niit.Ecommerce_Bd_ILT.DAO.CategoryDAO;
 import com.niit.Ecommerce_Bd_ILT.DAO.ProductDAO;
 import com.niit.Ecommerce_Bd_ILT.Model.CategoryModel;
