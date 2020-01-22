@@ -14,12 +14,12 @@ import org.springframework.web.servlet.ModelAndView;
 import com.niit.Ecommerce_Bd_ILT.DAO.CartDAO;
 import com.niit.Ecommerce_Bd_ILT.DAO.CategoryDAO;
 import com.niit.Ecommerce_Bd_ILT.DAO.ProductDAO;
-
+import com.niit.Ecommerce_Bd_ILT.DAO.ShipDAO;
 import com.niit.Ecommerce_Bd_ILT.DAO.UserDAO;
 import com.niit.Ecommerce_Bd_ILT.Model.CartModel;
 import com.niit.Ecommerce_Bd_ILT.Model.CategoryModel;
 import com.niit.Ecommerce_Bd_ILT.Model.ProductModel;
-
+import com.niit.Ecommerce_Bd_ILT.Model.ShipModel;
 import com.niit.Ecommerce_Bd_ILT.Model.UserModel;
 
 @Controller
@@ -36,9 +36,9 @@ public class HomeController
 	
 	@Autowired
 	CartDAO cart1;
-//	
-//	@Autowired
-//	ShipDAO ship1;
+	
+	@Autowired
+	ShipDAO ship1;
 	
    @RequestMapping("/")	
    public ModelAndView index()
@@ -188,88 +188,87 @@ public class HomeController
 		return mv;
 	}
 	
-//	//code for shipdetails
-//		@RequestMapping(value="/user/customerdetails")
-//		
-//		public ModelAndView customer()
-//		{
-//			ModelAndView m18=new ModelAndView("customerdetails");
-//		    return m18;
-//		}
-//		@RequestMapping(value="/user/customer")
-//		public ModelAndView customerpage(HttpServletRequest request)
-//		{
-//		    
-//			System.out.println("OUT");
-//		
-//		     //	int c_id=Integer.valueOf(request.getParameter("cusid"));
-//		        
-//			int c_id = Integer.parseInt(request.getParameter("cusid"));
-//		        
-//		        String c_name=request.getParameter("cname");
-//		 	   
-//		 	   String c_email=request.getParameter("cemail");
-//		 	   
-//		 	   String c_addr=request.getParameter("caddress");
-//		 	   
-//		 	   String c_phone=request.getParameter("cphone");
-//		 	   
-//		 	  String c_pay=request.getParameter("cpay");
-//		 	  
-//		 	  
-//		 	  ShipModel s1=new ShipModel();
-//		 	  
-//		 	  s1.setCusid(c_id);
-//		 	  s1.setCusname(c_name);
-//		 	  s1.setEmail(c_email);
-//		 	  s1.setAddress(c_addr);
-//		 	  s1.setPhone(c_phone);
-//		 	  s1.setPay(c_pay);
-//	          	
-//		 	  ship1.addCus(s1);
-//		 	  System.out.println("><><><><>"+s1.getCusname());
-//		 	 ModelAndView m18=new ModelAndView("customerdetails");
-//			    return m18;
-//			  
-//		}
-		//testing
+	//code for shipdetails
+		@RequestMapping(value="/user/customerdetails")
 		
-//	@RequestMapping(value="/admin/viewshipdetails")
-//		
-//		public ModelAndView views()
-//		{
-//		System.out.println("IN");
-//		List<ShipModel> list=ship1.getAll();
-//		
-//			ModelAndView m18=new ModelAndView("viewshipdetails");
-//			m18.addObject("list",list);
-//		    return m18;
-//		}
-//
-//		@RequestMapping("/user/thankyoupage")
-//		public ModelAndView thankyou(HttpServletRequest request)
-//		{
-//			
-//			System.out.println("****");
-//			
-//			ModelAndView k=new ModelAndView("thankyoupage");
-//			
-//			return k;
-//			
-//			
-//		}
-//		@RequestMapping("/user/check")
-//		public ModelAndView check(HttpServletRequest request)
-//		{
-//			System.out.println("hai");
-//			int id=Integer.parseInt(request.getParameter("cusid"));
-//			//String cemail=request.getParameter("cemail");
-//			 List<ShipModel> list=ship1.getAll();
-//			ModelAndView ck=new ModelAndView("thankyoupage");
-//			ck.addObject("sdetail",ship1.findById(id) );	
-//			// ck.addObject("slist", list);
-//			return ck;
-//		}
+		public ModelAndView customer()
+		{
+			ModelAndView m18=new ModelAndView("customerdetails");
+		    return m18;
+		}
+		@RequestMapping(value="/user/customer")
+		public ModelAndView customerpage(HttpServletRequest request)
+		{
+		    
+			System.out.println("OUT");
+		
+		     //	int c_id=Integer.valueOf(request.getParameter("cusid"));
+		        
+			int c_id = Integer.parseInt(request.getParameter("cusid"));
+		        
+		        String c_name=request.getParameter("cname");
+		 	   
+		 	   String c_email=request.getParameter("cemail");
+		 	   
+		 	   String c_addr=request.getParameter("caddress");
+		 	   
+		 	   String c_phone=request.getParameter("cphone");
+		 	   
+		 	  String c_pay=request.getParameter("cpay");
+		 	  
+		 	  
+		 	  ShipModel s1=new ShipModel();
+		 	  
+		 	  s1.setCusid(c_id);
+		 	  s1.setCusname(c_name);
+		 	  s1.setEmail(c_email);
+		 	  s1.setAddress(c_addr);
+		 	  s1.setPhone(c_phone);
+		 	  s1.setPay(c_pay);
+	          	
+		 	  ship1.addCus(s1);
+		 	  System.out.println("><><><><>"+s1.getCusname());
+		 	 ModelAndView m18=new ModelAndView("customerdetails");
+			    return m18;
+			  
+		}
+	//	testing
+		
+	@RequestMapping(value="/admin/viewshipdetails")
+		
+		public ModelAndView views()
+		{
+		System.out.println("IN");
+		List<ShipModel> list=ship1.getAll();
+		
+			ModelAndView m18=new ModelAndView("viewshipdetails");//			m18.addObject("list",list);
+	    return m18;
+		}
+
+		@RequestMapping("/user/thankyoupage")
+		public ModelAndView thankyou(HttpServletRequest request)
+		{
+			
+			System.out.println("****");
+			
+			ModelAndView k=new ModelAndView("thankyoupage");
+			
+			return k;
+			
+			
+		}
+		@RequestMapping("/user/check")
+		public ModelAndView check(HttpServletRequest request)
+		{
+			System.out.println("hai");
+			int id=Integer.parseInt(request.getParameter("cusid"));
+			//String cemail=request.getParameter("cemail");
+			 List<ShipModel> list=ship1.getAll();
+			ModelAndView ck=new ModelAndView("thankyoupage");
+			ck.addObject("sdetail",ship1.findById(id) );	
+			// ck.addObject("slist", list);
+			return ck;
+		}
 	   
    }
    
