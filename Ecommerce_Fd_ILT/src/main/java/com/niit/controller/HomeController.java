@@ -108,7 +108,7 @@ public class HomeController
 	public String userLogged() { 
 		return "redirect:/";	
 	}
-   
+   @RequestMapping("/noAccessPage")
    public ModelAndView notacess()
    {
 	   ModelAndView m9=new ModelAndView("noAccessPage");
@@ -232,18 +232,19 @@ public class HomeController
 			    return m18;
 			  
 		}
-	//	testing
-		
-	@RequestMapping(value="/admin/viewshipdetails")
-		
-		public ModelAndView views()
-		{
-		System.out.println("IN");
-		List<ShipModel> list=ship1.getAll();
-		
-			ModelAndView m18=new ModelAndView("viewshipdetails");//			m18.addObject("list",list);
-	    return m18;
-		}
+		//testing
+ 		
+	 	@RequestMapping(value="/admin/viewshipdetails")
+	 		
+	 		public ModelAndView views()
+	 		{
+	 		System.out.println("IN");
+	 		List<ShipModel> list=ship1.getAll();
+	 		
+	 			ModelAndView m18=new ModelAndView("viewshipdetails");
+	 			m18.addObject("list",list);
+	 		    return m18;
+	 		}
 
 		@RequestMapping("/user/thankyoupage")
 		public ModelAndView thankyou(HttpServletRequest request)

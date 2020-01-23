@@ -104,7 +104,7 @@ public class CategoryController
 			System.out.println(t);
 			t.printStackTrace();
 		}
-		ModelAndView m1=new ModelAndView("sucess");
+		ModelAndView m1=new ModelAndView("Adding");
 		return m1;
 		
 	}
@@ -132,7 +132,7 @@ public class CategoryController
 			System.out.println(t);
 			t.printStackTrace();
 		}
-		ModelAndView m6=new ModelAndView("sucess");
+		ModelAndView m6=new ModelAndView("AddingCategory");
 		return m6;
 	}
 	
