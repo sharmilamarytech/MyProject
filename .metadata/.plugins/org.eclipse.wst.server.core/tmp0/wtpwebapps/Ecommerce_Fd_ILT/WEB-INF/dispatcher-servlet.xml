@@ -43,4 +43,3 @@ http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.3.x
        
        <mvc:resources mapping="/resources/**" location="/resources/" />
        </beans>
-

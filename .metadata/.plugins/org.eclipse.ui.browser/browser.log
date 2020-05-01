@@ -55,3 +55,6 @@ Dec 11, 2019 13:21:22.34 [2924:17300:1211/132122.340:ERROR:checkin_request.cc(22
 Dec 16, 2019 11:43:37.63 NEW SESSION
 Dec 16, 2019 11:43:37.63 [7244:7928:1216/114337.628:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -105
 Dec 16, 2019 11:43:37.70 [7244:7928:1216/114337.637:ERROR:checkin_request.cc(223)] Failed to get checkin response. Fetcher failed. Retrying.
+
+Apr 01, 2020 19:50:34.27 NEW SESSION
+Apr 01, 2020 19:50:34.27 [19200:16228:0401/195034.234:ERROR:socket_stream.cc(218)] Closing stream with result -2
