@@ -58,3 +58,9 @@ Dec 16, 2019 11:43:37.70 [7244:7928:1216/114337.637:ERROR:checkin_request.cc(223
 
 Apr 01, 2020 19:50:34.27 NEW SESSION
 Apr 01, 2020 19:50:34.27 [19200:16228:0401/195034.234:ERROR:socket_stream.cc(218)] Closing stream with result -2
+
+Sep 26, 2020 16:09:03.04 NEW SESSION
+Sep 26, 2020 16:09:03.04 [8580:7060:0926/160903.039:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+Oct 13, 2020 11:49:17.35 NEW SESSION
+Oct 13, 2020 11:49:17.35 [1013/114917.359:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
